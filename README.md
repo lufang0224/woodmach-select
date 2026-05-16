@@ -50,6 +50,12 @@ hugo new content/en/equipment/<machine-slug>.md
 .\scripts\sync-equipment-languages.ps1 -Slug <machine-slug>
 ```
 
+If Windows blocks PowerShell scripts, use the wrapper instead:
+
+```powershell
+.\scripts\sync-equipment-languages.cmd <machine-slug>
+```
+
 3. Ask Codex to translate the generated `[TRANSLATE]` fields in:
 
 ```text
