@@ -36,6 +36,53 @@ hugo new content/en/equipment/<machine-slug>.md
 hugo new content/es/equipment/<machine-slug>.md
 ```
 
+Recommended workflow for multilingual equipment:
+
+1. Create and finish the English source page first:
+
+```powershell
+hugo new content/en/equipment/<machine-slug>.md
+```
+
+2. Generate translation draft files for the other languages:
+
+```powershell
+.\scripts\sync-equipment-languages.ps1 -Slug <machine-slug>
+```
+
+3. Ask Codex to translate the generated `[TRANSLATE]` fields in:
+
+```text
+content/zh/equipment/<machine-slug>.md
+content/es/equipment/<machine-slug>.md
+content/fr/equipment/<machine-slug>.md
+content/pt/equipment/<machine-slug>.md
+content/ar/equipment/<machine-slug>.md
+```
+
+Keep these fields identical across languages:
+
+```text
+slug
+brandKey
+status
+cover
+images
+videos
+```
+
+Translate these fields:
+
+```text
+title
+location
+type
+specs.label
+features
+support
+body text
+```
+
 Use lowercase English slugs, for example:
 
 ```text
