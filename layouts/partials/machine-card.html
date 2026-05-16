@@ -1,6 +1,10 @@
 <article class="machine-card">
   <a class="card-image" href="{{ .RelPermalink }}">
-    <img src="{{ .Params.cover }}" alt="{{ .Title }}" loading="lazy">
+    {{ with .Params.cover }}
+      <img src="{{ . }}" alt="{{ $.Title }}" loading="lazy">
+    {{ else }}
+      <span class="card-placeholder"><strong>{{ .Params.brand }}</strong><em>{{ .Params.type }}</em></span>
+    {{ end }}
     <span class="status-pill">{{ i18n (.Params.status | default "available") }}</span>
   </a>
   <div class="card-body">

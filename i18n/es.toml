@@ -46,6 +46,8 @@ other = "Especificaciones"
 other = "Aspectos destacados"
 [media]
 other = "Fotos reales"
+[videoOnlyNotice]
+other = "Este equipo actualmente solo tiene video. Al agregar fotos, se mostrara la galeria automaticamente."
 [video]
 other = "Video"
 [contact]

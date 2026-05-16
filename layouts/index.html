@@ -16,7 +16,7 @@
 <section class="brand-strip" aria-label="{{ i18n "brandsTitle" }}">
   <span>{{ i18n "brandsTitle" }}</span>
   <div>
-    {{ $brands := slice "kdt" "nanxing" "homag" "biesse" "scm" "haode" "pinmai" }}
+    {{ $brands := slice "kdt" "nanxing" "homag" "biesse" "scm" "haode" "pinmai" "huahua" }}
     {{ range $brands }}
       {{ $page := $.Site.GetPage (printf "/brands/%s" .) }}
       {{ with $page }}

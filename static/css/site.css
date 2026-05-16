@@ -455,6 +455,33 @@ a {
   object-fit: cover;
 }
 
+.card-placeholder,
+.detail-placeholder {
+  display: grid;
+  place-content: center;
+  gap: 8px;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  padding: 24px;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, .08), rgba(255, 255, 255, .02)),
+    #16211f;
+  color: #fff;
+  text-align: center;
+}
+
+.card-placeholder strong,
+.detail-placeholder strong {
+  font-size: 24px;
+}
+
+.card-placeholder em,
+.detail-placeholder span {
+  color: rgba(255, 255, 255, .68);
+  font-style: normal;
+  font-weight: 700;
+}
+
 .status-pill {
   position: absolute;
   top: 12px;
@@ -564,6 +591,14 @@ dd {
 .video-grid video {
   width: 100%;
   max-height: 620px;
+  border-radius: 8px;
+  background: #000;
+}
+
+.video-grid iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
   border-radius: 8px;
   background: #000;
 }

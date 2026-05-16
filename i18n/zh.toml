@@ -46,6 +46,8 @@ other = "规格参数"
 other = "设备亮点"
 [media]
 other = "实拍图册"
+[videoOnlyNotice]
+other = "该设备当前只有视频资料。后续添加封面图后，会自动显示图片图册。"
 [video]
 other = "设备视频"
 [contact]

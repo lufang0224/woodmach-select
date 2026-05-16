@@ -46,6 +46,8 @@ other = "Specifications"
 other = "Points forts"
 [media]
 other = "Photos reelles"
+[videoOnlyNotice]
+other = "Cette machine dispose actuellement seulement d'une video. Ajoutez des photos pour afficher la galerie."
 [video]
 other = "Video"
 [contact]

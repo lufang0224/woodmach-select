@@ -22,17 +22,29 @@
         <a class="button primary" href="{{ .Params.whatsappUrl | default $wa }}" target="_blank" rel="noopener">{{ i18n "detailWhatsappCta" }}</a>
       </div>
     </div>
-    <img src="{{ .Params.cover }}" alt="{{ .Title }}">
+    {{ with .Params.cover }}
+      <img src="{{ . }}" alt="{{ $.Title }}">
+    {{ else }}
+      <div class="detail-placeholder">
+        <strong>{{ .Params.brand }}</strong>
+        <span>{{ .Params.type }}</span>
+      </div>
+    {{ end }}
   </header>
 
-  {{ with .Params.videos }}
+  {{ if or .Params.youtubeVideos .Params.videos }}
     <section class="detail-section">
       <div class="section-heading">
         <p class="eyebrow">{{ i18n "video" }}</p>
         <h2>{{ i18n "video" }}</h2>
       </div>
       <div class="video-grid">
-        {{ range . }}
+        {{ range .Params.youtubeVideos }}
+          {{ $url := . }}
+          {{ $id := replaceRE `^.*(?:youtu\.be/|v=|embed/|shorts/)([A-Za-z0-9_-]{11}).*$` `$1` $url }}
+          <iframe src="https://www.youtube.com/embed/{{ $id }}" title="{{ $.Title }}" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        {{ end }}
+        {{ range .Params.videos }}
           <video src="{{ . }}" controls preload="metadata"></video>
         {{ end }}
       </div>
@@ -74,8 +86,15 @@
       <h2>{{ i18n "media" }}</h2>
     </div>
     <div class="photo-wall">
-      {{ range .Params.images }}
-        <a href="{{ . }}" class="lightbox-link"><img src="{{ . }}" alt="{{ $.Title }}" loading="lazy"></a>
+      {{ with .Params.images }}
+        {{ range . }}
+          <a href="{{ . }}" class="lightbox-link"><img src="{{ . }}" alt="{{ $.Title }}" loading="lazy"></a>
+        {{ end }}
+      {{ else }}
+        <div class="empty-state">
+          <span>{{ i18n "media" }}</span>
+          <p>{{ i18n "videoOnlyNotice" }}</p>
+        </div>
       {{ end }}
     </div>
   </section>

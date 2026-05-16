@@ -46,6 +46,8 @@ other = "Specifications"
 other = "Highlights"
 [media]
 other = "Real Photos"
+[videoOnlyNotice]
+other = "This listing is currently video-only. Upload a cover photo later to show a photo gallery."
 [video]
 other = "Video"
 [contact]
