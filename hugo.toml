@@ -1,4 +1,4 @@
-baseURL = "https://example.com/"
+baseURL = "https://lleyihome.com/"
 title = "WoodMach Select"
 defaultContentLanguage = "en"
 defaultContentLanguageInSubdir = false
@@ -8,10 +8,10 @@ summaryLength = 28
 [params]
   brand = "WoodMach Select"
   tagline = "精选二手木工机械图册"
-  whatsapp = "+86 000 0000 0000"
-  whatsappNumber = "860000000000"
-  whatsappUrl = "https://wa.me/860000000000?text=Hi%2C%20I%27m%20interested%20in%20your%20used%20woodworking%20machines.%20Please%20send%20me%20available%20machines%20and%20quotes."
-  email = "sales@example.com"
+  whatsapp = "+44 7845 284025"
+  whatsappNumber = "447845284025"
+  whatsappUrl = "https://wa.me/447845284025?text=Hi%2C%20I%27m%20interested%20in%20your%20used%20woodworking%20machines.%20Please%20send%20me%20available%20machines%20and%20quotes."
+  email = "info@lleyihome.com"
 
 [markup.goldmark.renderer]
   unsafe = true
