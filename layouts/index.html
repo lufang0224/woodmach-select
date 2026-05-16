@@ -1,0 +1,73 @@
+{{ define "main" }}
+{{ $machines := where .Site.RegularPages "Section" "equipment" }}
+<section class="hero">
+  <img class="hero-bg" src="/uploads/site/hero-used-woodworking-machinery.png" alt="" loading="eager">
+  <div class="hero-copy">
+    <p class="eyebrow">{{ i18n "business" }}</p>
+    <h1>{{ .Params.hero_title | default .Title }}</h1>
+    <p>{{ .Params.hero_text }}</p>
+    <div class="hero-actions">
+      <a class="button primary" href="{{ relLangURL "equipment/" }}">{{ i18n "catalog" }}</a>
+      <a class="button ghost" href="{{ .Site.Params.whatsappUrl }}" target="_blank" rel="noopener">{{ i18n "whatsappCta" }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="brand-strip" aria-label="{{ i18n "brandsTitle" }}">
+  <span>{{ i18n "brandsTitle" }}</span>
+  <div>
+    {{ $brands := slice "kdt" "nanxing" "homag" "biesse" "scm" "haode" "pinmai" }}
+    {{ range $brands }}
+      {{ $page := $.Site.GetPage (printf "/brands/%s" .) }}
+      {{ with $page }}
+        <a href="{{ .RelPermalink }}">{{ .Params.brandName }}</a>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+
+<section class="trust-band" aria-label="{{ i18n "qualityControl" }}">
+  <div class="trust-card">
+    <span class="trust-index">01</span>
+    <strong>{{ i18n "qualityControl" }}</strong>
+    <p>{{ i18n "qualityControlText" }}</p>
+    <small>{{ i18n "businessProof" }}</small>
+  </div>
+  <div class="trust-card">
+    <span class="trust-index">02</span>
+    <strong>{{ i18n "globalFulfillment" }}</strong>
+    <p>{{ i18n "globalFulfillmentText" }}</p>
+    <small>{{ i18n "supportProof" }}</small>
+  </div>
+</section>
+
+<section class="section-wrap">
+  <div class="section-heading">
+    <p class="eyebrow">{{ i18n "catalog" }}</p>
+    <h2>{{ i18n "catalog" }}</h2>
+  </div>
+  <div class="masonry-grid">
+    {{ range $machines }}
+      {{ partial "machine-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+
+<section class="section-wrap">
+  <div class="section-heading">
+    <p class="eyebrow">{{ i18n "media" }}</p>
+    <h2>{{ i18n "media" }}</h2>
+  </div>
+  <div class="photo-stream">
+    {{ range $machines }}
+      {{ $machine := . }}
+      {{ range .Params.images }}
+        <a class="stream-item" href="{{ $machine.RelPermalink }}">
+          <img src="{{ . }}" alt="{{ $machine.Title }}" loading="lazy">
+          <span>{{ $machine.Title }}</span>
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}

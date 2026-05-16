@@ -1,0 +1,64 @@
+[catalog]
+other = "Catalogo"
+[business]
+other = "Modelo comercial"
+[businessText]
+other = "Selecionamos os equipamentos, verificamos a qualidade e fornecemos suporte tecnico depois da venda."
+[businessProof]
+other = "Equipamentos selecionados · Midia real · Controle de qualidade"
+[qualityControl]
+other = "Controle de qualidade"
+[qualityControlText]
+other = "Inspecoes rigorosas antes do envio. Podemos fornecer videos de teste sem cortes da maquina exata."
+[globalFulfillment]
+other = "Entrega global"
+[globalFulfillmentText]
+other = "Opcoes FOB/CIF disponiveis. Pecas de reposicao incluidas e suporte remoto permanente."
+[brandsTitle]
+other = "Marcas que buscamos com frequencia"
+[brandCategory]
+other = "Categoria da marca"
+[brandCategoryText]
+other = "Maquinas usadas disponiveis desta marca."
+[noBrandStock]
+other = "Sem maquinas desta marca no momento"
+[noBrandStockText]
+other = "Esta marca faz parte da nossa lista de busca frequente, mas nao ha maquinas publicadas agora. Fale conosco pelo WhatsApp para verificarmos disponibilidade nas fabricas."
+[whatsappCta]
+other = "Chat no WhatsApp"
+[support]
+other = "Suporte tecnico"
+[supportText]
+other = "Ajudamos a confirmar condicao, parametros e orientacao de uso apos a compra."
+[supportProof]
+other = "Revisao da condicao · Orientacao de instalacao · Suporte posterior"
+[viewDetails]
+other = "Ver maquina"
+[available]
+other = "Em estoque"
+[reserved]
+other = "Reservada"
+[sold]
+other = "Vendida"
+[specs]
+other = "Especificacoes"
+[features]
+other = "Destaques"
+[media]
+other = "Fotos reais"
+[video]
+other = "Video"
+[contact]
+other = "Contato"
+[detailWhatsappCta]
+other = "WhatsApp para preco e video"
+[similar]
+other = "Outras maquinas"
+[year]
+other = "Ano"
+[location]
+other = "Embarque"
+[model]
+other = "Modelo"
+[brand]
+other = "Marca"

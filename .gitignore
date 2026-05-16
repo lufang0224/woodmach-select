@@ -1,0 +1,10 @@
+public/
+resources/_gen/
+.tools/
+.hugo_build.lock
+.DS_Store
+Thumbs.db
+
+# Local raw source media. The website uses normalized files in static/uploads/.
+/haode-871jd-edge-bander-2021/
+/pinmai-pt67-cnc-six-side-drill-2023/

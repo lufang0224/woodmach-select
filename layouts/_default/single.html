@@ -1,0 +1,89 @@
+{{ define "main" }}
+{{ if .Params.specs }}
+<article class="machine-detail">
+  <header class="detail-hero">
+    <div>
+      <p class="eyebrow">{{ .Params.type }}</p>
+      <div class="detail-title-row">
+        <h1>{{ .Title }}</h1>
+        <span class="stock-badge">{{ i18n (.Params.status | default "available") }}</span>
+      </div>
+      <p>{{ .Summary | plainify }}</p>
+      <dl class="detail-meta">
+        <div><dt>{{ i18n "brand" }}</dt><dd>{{ .Params.brand }}</dd></div>
+        <div><dt>{{ i18n "model" }}</dt><dd>{{ .Params.model }}</dd></div>
+        <div><dt>{{ i18n "year" }}</dt><dd>{{ .Params.year }}</dd></div>
+        <div><dt>{{ i18n "location" }}</dt><dd>{{ .Params.location }}</dd></div>
+      </dl>
+      <div class="hero-actions">
+        {{ $message := printf "Hi, I'm interested in the %s on your website. Please send me the price, testing video, and shipping options." .Title }}
+        {{ $number := .Site.Params.whatsappNumber | default "860000000000" }}
+        {{ $wa := printf "https://wa.me/%s?text=%s" $number ($message | urlquery) }}
+        <a class="button primary" href="{{ .Params.whatsappUrl | default $wa }}" target="_blank" rel="noopener">{{ i18n "detailWhatsappCta" }}</a>
+      </div>
+    </div>
+    <img src="{{ .Params.cover }}" alt="{{ .Title }}">
+  </header>
+
+  {{ with .Params.videos }}
+    <section class="detail-section">
+      <div class="section-heading">
+        <p class="eyebrow">{{ i18n "video" }}</p>
+        <h2>{{ i18n "video" }}</h2>
+      </div>
+      <div class="video-grid">
+        {{ range . }}
+          <video src="{{ . }}" controls preload="metadata"></video>
+        {{ end }}
+      </div>
+    </section>
+  {{ end }}
+
+  <section class="detail-section two-col">
+    <div>
+      <div class="section-heading">
+        <p class="eyebrow">{{ i18n "specs" }}</p>
+        <h2>{{ i18n "specs" }}</h2>
+      </div>
+      <dl class="spec-table">
+        {{ range .Params.specs }}
+          <div><dt>{{ .label }}</dt><dd>{{ .value }}</dd></div>
+        {{ end }}
+      </dl>
+    </div>
+    <div>
+      <div class="section-heading">
+        <p class="eyebrow">{{ i18n "features" }}</p>
+        <h2>{{ i18n "features" }}</h2>
+      </div>
+      <ul class="feature-list">
+        {{ range .Params.features }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+      <div class="support-box">
+        <strong>{{ i18n "support" }}</strong>
+        <p>{{ .Params.support }}</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="detail-section">
+    <div class="section-heading">
+      <p class="eyebrow">{{ i18n "media" }}</p>
+      <h2>{{ i18n "media" }}</h2>
+    </div>
+    <div class="photo-wall">
+      {{ range .Params.images }}
+        <a href="{{ . }}" class="lightbox-link"><img src="{{ . }}" alt="{{ $.Title }}" loading="lazy"></a>
+      {{ end }}
+    </div>
+  </section>
+</article>
+{{ else }}
+  <article class="page-title">
+    <h1>{{ .Title }}</h1>
+    {{ .Content }}
+  </article>
+{{ end }}
+{{ end }}

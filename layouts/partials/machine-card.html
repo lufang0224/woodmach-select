@@ -1,0 +1,16 @@
+<article class="machine-card">
+  <a class="card-image" href="{{ .RelPermalink }}">
+    <img src="{{ .Params.cover }}" alt="{{ .Title }}" loading="lazy">
+    <span class="status-pill">{{ i18n (.Params.status | default "available") }}</span>
+  </a>
+  <div class="card-body">
+    <p class="machine-type">{{ .Params.type }}</p>
+    <h3><a href="{{ .RelPermalink }}">{{ .Title }}</a></h3>
+    <dl class="meta-list">
+      <div><dt>{{ i18n "model" }}</dt><dd>{{ .Params.model }}</dd></div>
+      <div><dt>{{ i18n "year" }}</dt><dd>{{ .Params.year }}</dd></div>
+      <div><dt>{{ i18n "location" }}</dt><dd>{{ .Params.location }}</dd></div>
+    </dl>
+    <a class="text-link" href="{{ .RelPermalink }}">{{ i18n "viewDetails" }}</a>
+  </div>
+</article>

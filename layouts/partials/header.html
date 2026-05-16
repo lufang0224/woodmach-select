@@ -1,0 +1,20 @@
+<header class="site-header">
+  <a class="brand" href="{{ .Site.Home.RelPermalink }}" aria-label="{{ .Site.Title }}">
+    <img src="/logo.svg" alt="" width="44" height="44">
+    <span>
+      <strong>{{ .Site.Params.brand | default .Site.Title }}</strong>
+      <small>{{ .Site.Params.tagline }}</small>
+    </span>
+  </a>
+  <nav class="nav-links" aria-label="Primary">
+    <a href="{{ relLangURL "equipment/" }}">{{ i18n "catalog" }}</a>
+    <details class="language-menu">
+      <summary>{{ .Site.Language.Label }}</summary>
+      <div>
+        {{ range .Site.Home.AllTranslations }}
+          <a href="{{ .RelPermalink }}">{{ .Language.Label }}</a>
+        {{ end }}
+      </div>
+    </details>
+  </nav>
+</header>

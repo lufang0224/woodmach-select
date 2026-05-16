@@ -1,0 +1,10 @@
+<footer class="site-footer">
+  <div>
+    <strong>{{ .Site.Params.brand | default .Site.Title }}</strong>
+    <p>{{ i18n "businessText" }}</p>
+  </div>
+  <div class="footer-contact">
+    <span>{{ .Site.Params.whatsapp }}</span>
+    <a href="mailto:{{ .Site.Params.email }}">{{ .Site.Params.email }}</a>
+  </div>
+</footer>

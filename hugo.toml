@@ -1,0 +1,70 @@
+baseURL = "https://example.com/"
+title = "WoodMach Select"
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = false
+enableRobotsTXT = true
+summaryLength = 28
+
+[params]
+  brand = "WoodMach Select"
+  tagline = "精选二手木工机械图册"
+  whatsapp = "+86 000 0000 0000"
+  whatsappNumber = "860000000000"
+  whatsappUrl = "https://wa.me/860000000000?text=Hi%2C%20I%27m%20interested%20in%20your%20used%20woodworking%20machines.%20Please%20send%20me%20available%20machines%20and%20quotes."
+  email = "sales@example.com"
+
+[markup.goldmark.renderer]
+  unsafe = true
+
+[languages]
+  [languages.zh]
+    label = "中文"
+    locale = "zh-CN"
+    weight = 2
+    contentDir = "content/zh"
+    title = "精选二手木工机械"
+    [languages.zh.params]
+      tagline = "严选设备、实拍展示、品控把关、后续技术支持"
+  [languages.en]
+    label = "English"
+    locale = "en"
+    weight = 1
+    contentDir = "content/en"
+    title = "Used Woodworking Machinery"
+    [languages.en.params]
+      tagline = "Selected machines, real media, quality checks, technical support"
+  [languages.es]
+    label = "Español"
+    locale = "es"
+    weight = 3
+    contentDir = "content/es"
+    title = "Maquinaria usada para carpinteria"
+    [languages.es.params]
+      tagline = "Equipos seleccionados, imagenes reales, control de calidad y soporte tecnico"
+  [languages.fr]
+    label = "Français"
+    locale = "fr"
+    weight = 4
+    contentDir = "content/fr"
+    title = "Machines a bois d'occasion"
+    [languages.fr.params]
+      tagline = "Machines selectionnees, photos reelles, controle qualite et support technique"
+  [languages.pt]
+    label = "Português"
+    locale = "pt"
+    weight = 5
+    contentDir = "content/pt"
+    title = "Maquinas usadas para marcenaria"
+    [languages.pt.params]
+      tagline = "Equipamentos selecionados, midia real, controle de qualidade e suporte tecnico"
+  [languages.ar]
+    label = "العربية"
+    locale = "ar"
+    weight = 6
+    contentDir = "content/ar"
+    title = "معدات نجارة مستعملة"
+    [languages.ar.params]
+      tagline = "معدات مختارة، صور حقيقية، فحص جودة، ودعم فني لاحق"
+
+[outputs]
+  home = ["HTML", "RSS"]

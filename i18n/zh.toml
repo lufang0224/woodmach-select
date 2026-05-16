@@ -1,0 +1,64 @@
+[catalog]
+other = "设备图册"
+[business]
+other = "商业模式"
+[businessText]
+other = "我们全程负责严选设备与品控把关，也提供后续的技术支持。"
+[businessProof]
+other = "严选库存 · 实拍资料 · 品控把关"
+[qualityControl]
+other = "质量把关"
+[qualityControlText]
+other = "发货前严格检查。我们可提供对应设备的一镜到底真实试机视频。"
+[globalFulfillment]
+other = "全球交付"
+[globalFulfillmentText]
+other = "支持 FOB/CIF 运输方案，随设备提供常用配件，并提供长期远程故障协助。"
+[brandsTitle]
+other = "常做品牌"
+[brandCategory]
+other = "品牌分类"
+[brandCategoryText]
+other = "该品牌下当前可展示的二手木工机械。"
+[noBrandStock]
+other = "暂时没有该品牌现货"
+[noBrandStockText]
+other = "该品牌属于我们常做采购范围，但当前网站暂无在线设备。可以通过 WhatsApp 联系我们，我们会帮你从工厂端确认可用设备。"
+[whatsappCta]
+other = "WhatsApp 咨询"
+[support]
+other = "技术支持"
+[supportText]
+other = "从设备状态沟通、参数确认到后续使用建议，我们持续提供技术支持。"
+[supportProof]
+other = "状态确认 · 装机建议 · 后续支持"
+[viewDetails]
+other = "查看设备"
+[available]
+other = "现货"
+[reserved]
+other = "预订中"
+[sold]
+other = "已售"
+[specs]
+other = "规格参数"
+[features]
+other = "设备亮点"
+[media]
+other = "实拍图册"
+[video]
+other = "设备视频"
+[contact]
+other = "联系咨询"
+[detailWhatsappCta]
+other = "WhatsApp 询价与视频"
+[similar]
+other = "其他设备"
+[year]
+other = "年份"
+[location]
+other = "装运"
+[model]
+other = "型号"
+[brand]
+other = "品牌"

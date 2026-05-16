@@ -1,0 +1,64 @@
+[catalog]
+other = "كتالوج المعدات"
+[business]
+other = "نموذج العمل"
+[businessText]
+other = "نتولى اختيار المعدات وفحص الجودة، ونوفر دعما فنيا بعد البيع."
+[businessProof]
+other = "معدات مختارة · صور حقيقية · فحص جودة"
+[qualityControl]
+other = "فحص الجودة"
+[qualityControlText]
+other = "فحص صارم قبل الشحن. يمكننا توفير فيديو اختبار كامل بدون قطع لنفس المعدة المطلوبة."
+[globalFulfillment]
+other = "التسليم العالمي"
+[globalFulfillmentText]
+other = "خيارات شحن FOB/CIF متاحة. قطع غيار مرفقة ودعم فني عن بعد على المدى الطويل."
+[brandsTitle]
+other = "علامات نوفرها بشكل متكرر"
+[brandCategory]
+other = "تصنيف العلامة"
+[brandCategoryText]
+other = "معدات نجارة مستعملة متاحة من هذه العلامة."
+[noBrandStock]
+other = "لا توجد معدات متاحة حاليا لهذه العلامة"
+[noBrandStockText]
+other = "هذه العلامة ضمن نطاق التوريد المعتاد لدينا، لكن لا توجد معدات منشورة حاليا. تواصل معنا عبر واتساب لنتحقق من المتاح من المصانع."
+[whatsappCta]
+other = "تواصل عبر واتساب"
+[support]
+other = "الدعم الفني"
+[supportText]
+other = "نساعد في توضيح حالة المعدة، تأكيد المواصفات، وتقديم إرشادات الاستخدام."
+[supportProof]
+other = "مراجعة الحالة · نصائح التركيب · دعم بعد البيع"
+[viewDetails]
+other = "عرض المعدة"
+[available]
+other = "متوفر"
+[reserved]
+other = "محجوزة"
+[sold]
+other = "مباعة"
+[specs]
+other = "المواصفات"
+[features]
+other = "النقاط الرئيسية"
+[media]
+other = "صور حقيقية"
+[video]
+other = "فيديو المعدة"
+[contact]
+other = "تواصل معنا"
+[detailWhatsappCta]
+other = "واتساب للسعر والفيديو"
+[similar]
+other = "معدات أخرى"
+[year]
+other = "السنة"
+[location]
+other = "الشحن"
+[model]
+other = "الموديل"
+[brand]
+other = "العلامة"

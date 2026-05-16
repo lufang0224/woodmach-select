@@ -1,0 +1,64 @@
+[catalog]
+other = "Catalogue"
+[business]
+other = "Modele commercial"
+[businessText]
+other = "Nous selectionnons les machines, controlons la qualite et fournissons un support technique apres la vente."
+[businessProof]
+other = "Machines selectionnees · Photos reelles · Controle qualite"
+[qualityControl]
+other = "Controle qualite"
+[qualityControlText]
+other = "Inspections rigoureuses avant expedition. Nous pouvons fournir des videos d'essai non coupees de la machine exacte."
+[globalFulfillment]
+other = "Livraison mondiale"
+[globalFulfillmentText]
+other = "Options FOB/CIF disponibles. Pieces de rechange incluses et depannage a distance a vie."
+[brandsTitle]
+other = "Marques que nous sourcons souvent"
+[brandCategory]
+other = "Categorie de marque"
+[brandCategoryText]
+other = "Machines a bois d'occasion disponibles sous cette marque."
+[noBrandStock]
+other = "Pas de stock pour cette marque actuellement"
+[noBrandStockText]
+other = "Cette marque fait partie de nos recherches habituelles, mais aucune machine n'est publiee actuellement. Contactez-nous sur WhatsApp pour verifier la disponibilite en usine."
+[whatsappCta]
+other = "Chat WhatsApp"
+[support]
+other = "Support technique"
+[supportText]
+other = "Nous aidons a confirmer l'etat, les parametres et les conseils d'utilisation apres l'achat."
+[supportProof]
+other = "Verification de l'etat · Conseils d'installation · Support apres-vente"
+[viewDetails]
+other = "Voir la machine"
+[available]
+other = "En stock"
+[reserved]
+other = "Reservee"
+[sold]
+other = "Vendue"
+[specs]
+other = "Specifications"
+[features]
+other = "Points forts"
+[media]
+other = "Photos reelles"
+[video]
+other = "Video"
+[contact]
+other = "Contact"
+[detailWhatsappCta]
+other = "WhatsApp pour prix et video"
+[similar]
+other = "Autres machines"
+[year]
+other = "Annee"
+[location]
+other = "Expedition"
+[model]
+other = "Modele"
+[brand]
+other = "Marque"

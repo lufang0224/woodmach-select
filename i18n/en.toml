@@ -1,0 +1,64 @@
+[catalog]
+other = "Catalog"
+[business]
+other = "Business Model"
+[businessText]
+other = "We handle machine selection and quality control from start to finish, and provide follow-up technical support."
+[businessProof]
+other = "Selected inventory · Real media · Quality checks"
+[qualityControl]
+other = "Quality Control"
+[qualityControlText]
+other = "Rigorous pre-shipment inspections. We provide uncut testing videos of your exact machine."
+[globalFulfillment]
+other = "Global Fulfillment"
+[globalFulfillmentText]
+other = "FOB/CIF shipping options available. Spare parts included and lifetime remote troubleshooting."
+[brandsTitle]
+other = "Brands we frequently source"
+[brandCategory]
+other = "Brand Category"
+[brandCategoryText]
+other = "Used woodworking machinery available under this brand."
+[noBrandStock]
+other = "No machines in stock right now"
+[noBrandStockText]
+other = "This brand is in our regular sourcing list, but there is no current listing online. Contact us on WhatsApp and we can check available machines from factories."
+[whatsappCta]
+other = "Chat on WhatsApp"
+[support]
+other = "Technical Support"
+[supportText]
+other = "From condition communication and parameter confirmation to usage advice, we provide continuing technical support."
+[supportProof]
+other = "Condition review · Setup advice · After-sale support"
+[viewDetails]
+other = "View Machine"
+[available]
+other = "In Stock"
+[reserved]
+other = "Reserved"
+[sold]
+other = "Sold"
+[specs]
+other = "Specifications"
+[features]
+other = "Highlights"
+[media]
+other = "Real Photos"
+[video]
+other = "Video"
+[contact]
+other = "Contact"
+[detailWhatsappCta]
+other = "WhatsApp for Price & Video"
+[similar]
+other = "Other Machines"
+[year]
+other = "Year"
+[location]
+other = "Shipping"
+[model]
+other = "Model"
+[brand]
+other = "Brand"

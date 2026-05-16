@@ -1,0 +1,26 @@
+{{ define "main" }}
+{{ $brand := .Params.brandName }}
+{{ $brandKey := .Params.brandKey }}
+{{ $machines := where (where .Site.RegularPages "Section" "equipment") "Params.brandKey" $brandKey }}
+<section class="page-title brand-page-title">
+  <p class="eyebrow">{{ i18n "brandCategory" }}</p>
+  <h1>{{ .Title }}</h1>
+  <p>{{ .Params.description | default (i18n "brandCategoryText") }}</p>
+</section>
+
+<section class="section-wrap">
+  {{ if gt (len $machines) 0 }}
+    <div class="masonry-grid">
+      {{ range $machines }}
+        {{ partial "machine-card.html" . }}
+      {{ end }}
+    </div>
+  {{ else }}
+    <div class="empty-state">
+      <span>{{ i18n "noBrandStock" }}</span>
+      <p>{{ i18n "noBrandStockText" }}</p>
+      <a class="button primary" href="{{ .Site.Params.whatsappUrl }}" target="_blank" rel="noopener">{{ i18n "whatsappCta" }}</a>
+    </div>
+  {{ end }}
+</section>
+{{ end }}

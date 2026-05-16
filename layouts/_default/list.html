@@ -1,0 +1,12 @@
+{{ define "main" }}
+<section class="page-title">
+  <h1>{{ .Title }}</h1>
+</section>
+<section class="section-wrap">
+  <div class="masonry-grid">
+    {{ range .Pages }}
+      {{ partial "machine-card.html" . }}
+    {{ end }}
+  </div>
+</section>
+{{ end }}
